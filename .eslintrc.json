@@ -1,0 +1,45 @@
+{
+  "parser": "babel-eslint",
+  "rules": {
+    "comma-dangle": 0,
+    "no-undef": 0,
+    "class-methods-use-this": 0,
+    "import/no-unresolved": 0,
+    "import/no-extraneous-dependencies": 0,
+    "import/extensions": [
+      0,
+      {
+        "js": "never"
+      }
+    ],
+    "no-multiple-empty-lines": [
+      "error",
+      {
+        "max": 1
+      }
+    ],
+    "arrow-parens": [
+      "error",
+      "always"
+    ],
+    "no-plusplus": [
+      2,
+      {
+        "allowForLoopAfterthoughts": true
+      }
+    ],
+    "max-len": ["error", 120, 2, {
+      "ignoreUrls": true,
+      "ignoreComments": false,
+      "ignoreRegExpLiterals": true,
+      "ignoreStrings": true,
+      "ignoreTemplateLiterals": true
+    }],
+    "no-unused-vars": ["error", {
+      "ignoreRestSiblings": true
+    }],
+    "quotes": ["error", "single", { "allowTemplateLiterals": true }],
+    "new-cap": [0],
+    "arrow-body-style": [0]
+  }
+}
