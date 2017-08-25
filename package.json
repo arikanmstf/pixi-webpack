@@ -1,0 +1,37 @@
+{
+  "name": "pixi-webpack-example",
+  "description": "PixiJS webpack example project",
+  "version": "0.0.1",
+  "scripts": {
+    "clean": "rm -rf ./dist/*",
+    "lint": "eslint --max-warnings 0 --ext .js src/scripts",
+    "prepare": "npm run clean && npm run lint",
+    "prod": "npm run prepare && webpack-dev-server --env=prod",
+    "dev": "npm run prepare && webpack-dev-server --env=dev",
+    "dist:prod": "npm run prepare && webpack -p --env=prod",
+    "dist:dev": "npm run prepare && webpack --env=dev"
+  },
+  "author": "arikanmstf",
+  "license": "MIT",
+  "dependencies": {
+    "pixi.js": "^4.5.4"
+  },
+  "devDependencies": {
+    "babel-core": "^6.26.0",
+    "babel-eslint": "^7.2.3",
+    "babel-loader": "^7.1.2",
+    "babel-preset-es2015": "^6.24.1",
+    "babel-preset-stage-1": "^6.24.1",
+    "css-loader": "^0.28.5",
+    "eslint": "^4.5.0",
+    "extract-text-webpack-plugin": "^3.0.0",
+    "file-loader": "^0.11.2",
+    "html-webpack-plugin": "^2.30.1",
+    "path": "^0.12.7",
+    "style-loader": "^0.18.2",
+    "uglifyjs-webpack-plugin": "^0.4.6",
+    "webpack": "^3.5.5",
+    "webpack-dev-server": "^2.7.1",
+    "yargs": "^8.0.2"
+  }
+}
